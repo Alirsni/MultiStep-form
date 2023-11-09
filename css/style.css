@@ -1,0 +1,197 @@
+@font-face {
+	font-family: Anjoman-bold;
+	src: url("../assets/fonts/Anjoman-ExtraBold.woff");
+}
+
+@font-face {
+	font-family: Anjoman-light;
+	src: url("../assets/fonts/Anjoman-ExtraLight.woff");
+}
+
+@font-face {
+	font-family: Anjoman-medium;
+	src: url("../assets/fonts/Anjoman-Medium.woff");
+}
+
+@font-face {
+	font-family: Anjoman-regular;
+	src: url("/assets/fonts/Anjoman-Medium.woff");
+}
+
+body{
+    background: rgba(250, 250, 250, 0.75) !important;
+    backdrop-filter: blur(72px);
+    font-family: Anjoman-medium !important;
+}
+.main-part{
+    border-radius: 30px;
+    border: 1px solid var(--Border-gray, #DFDFDF);
+    background: #FDFDFD;
+    margin-top: 50px;
+    height: 92vh;
+}
+.badge-icon{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    background-color: #EEE;
+    border-radius: 50%;
+}
+.text-red-color{
+    color: #C83F49 !important;
+}
+.input-part-1{
+    width: 272px;
+    height: 52px;
+    padding: 10px 19px;
+    border-radius: 10px;
+    background: #ECECEC;
+    outline: none;
+    border: none;
+    margin: 15px;
+}
+.next-button{
+    width: 221px;
+    padding: 17px 32px !important;
+    border-radius: 12px !important;
+    background: #C83F49;
+    color: #EEE;
+    border: none;
+}
+.back-button{
+    width: 221px;
+    padding: 17px 32px !important;
+    border-radius: 12px !important;
+    background: #DFDFDF;
+    color: #BFBFBF;
+    border: none !important;
+}
+.select-gender-inpouts{
+    width: 317px !important;
+    padding: 17px 32px !important;
+    border-radius: 12px !important;
+}
+.display-show{
+    display: flex !important;
+}
+.display-hidden{
+    display: none !important;
+}
+.start-step{
+    /* background-image: url(/assets/img/bg-pt2\ 4.png); */
+    max-width: 840px;
+    height: 671px;
+    margin: 0 auto !important;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 1px solid var(--Primary, #C83F49);
+    background: linear-gradient(257deg, rgba(207, 82, 90, 0.76) -3.87%, rgba(183, 55, 64, 0.90) 71.01%);
+    box-shadow: 0px 4px 144px 0px rgba(200, 63, 73, 0.22);
+
+}
+.top-of-forms{
+    display: none;
+}
+.buttons-section{
+    display: none;
+}
+.step-1{
+    display: none ;
+    flex-direction: column;
+    height: 50vh;
+}
+.step-2{
+    display: none;
+    height: 60vh;
+}
+.step-3{
+    display: none ;
+}
+.health-img-start{
+    width: 148.378px;
+    height: 148.378px;
+    border-radius: 20px 20px 0px 20px;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.80);
+    stroke-width: 1px;
+    stroke: var(--Border-gray, #DFDFDF);
+    filter: drop-shadow(0px 4px 25px rgba(138, 138, 138, 0.12));
+    backdrop-filter: blur(17px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.health-icon{
+    height: 176px;
+}
+.chair-icon{
+    width: 64.157px;
+    height: 64.157px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    left: 75%;
+    top: 75%;
+}
+.start-step-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Anjoman-medium;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.strat-step-p-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Anjoman-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0px 10px;
+}
+.start-step-btn{
+    display: flex;
+    width: 360px;
+    padding: 17px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #FFF;
+    border: none;
+    color: var(--Primary, #C83F49);
+    text-align: center;
+    font-family: Anjoman-medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.under-start-btn{
+    color: #FFF;
+    text-align: center;
+    font-family: Anjoman-medium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.gender-section{
+    row-gap: 20px !important;
+}
+@media screen and (max-width:768px) {
+    .back-button{
+        width: 115px;
+    }
+    .forward-button{
+        width: 200px;
+    }
+    
+}
