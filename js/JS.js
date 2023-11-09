@@ -15,5 +15,4 @@ if($(".step-2").hasClass("row")){
     $(".step-2").removeClass("row");
     $(".step-3").addClass("row");
 }
-
 });
