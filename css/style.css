@@ -58,13 +58,14 @@ body{
     color: #EEE;
     border: none;
 }
-.back-button{
+.prev-button{
     width: 221px;
     padding: 17px 32px !important;
     border-radius: 12px !important;
-    background: #DFDFDF;
-    color: #BFBFBF;
+    background: #758898;
+    color: #fff;
     border: none !important;
+    text-align: center;
 }
 .select-gender-inpouts{
     width: 317px !important;
@@ -72,10 +73,11 @@ body{
     border-radius: 12px !important;
 }
 .display-show{
-    display: flex !important;
+    display: flex;
+    justify-content: center;
 }
 .display-hidden{
-    display: none !important;
+    display: none;
 }
 .start-step{
     /* background-image: url(/assets/img/bg-pt2\ 4.png); */
@@ -95,17 +97,33 @@ body{
 .buttons-section{
     display: none;
 }
-.step-1{
-    display: none ;
-    flex-direction: column;
-    height: 50vh;
-}
-.step-2{
+#section1{
     display: none;
     height: 60vh;
 }
-.step-3{
+#section2{
+    display: none;
+    height: 60vh;
+}
+#section3{
     display: none ;
+    height: 60vh;
+}
+#section4{
+    display: none;
+    height: 60vh;
+}
+#section5{
+    display: none;
+    height: 60vh;
+}
+#section6{
+    display: none;
+    height: 60vh;
+}
+#section7{
+    display: none;
+    height: 60vh;
 }
 .health-img-start{
     width: 148.378px;
@@ -183,11 +201,27 @@ body{
     font-weight: 500;
     line-height: normal;
 }
+#address{
+    display: flex;
+    max-width: 439px;
+    height: 224px;
+    padding: 10px 19px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #ECECEC;
+    border: none;
+}
 .gender-section{
     row-gap: 20px !important;
 }
+.btn{
+    width: 200px;
+    border-radius: 1er3 0px !important;
+}
 @media screen and (max-width:768px) {
-    .back-button{
+    .prev-button{
         width: 115px;
     }
     .forward-button{

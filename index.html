@@ -8,7 +8,6 @@
     <title>Form</title>
 </head>
 <body>
-    <section>
         <div class="container rounded main-part">
             <!-- start-step started  -->
             <div class="row justify-content-around flex-column align-items-center start-step">
@@ -45,65 +44,209 @@
             <!-----------  formm started  ---------->
             <form action="#">
                 <!-- step-one(name - lastname - number) form starts -->
-                <div class="align-items-center step-1 my-5">
-                    <div class="col-11 col-md-4 pe-5">
-                        <label for="name" class="d-block text-end pe-4"> نام<span class="text-danger">*</span></label>
-                        <input type="text" class="input-part-1" id="name">
-                        <label for="last-name" class="d-block text-end pe-4">نام خانوادگی<span class="text-danger">*</span></label>
-                        <input type="text" class="input-part-1" id="last-name">
+                <section id="section1">
+                    <div class="row justify-content-center flex-column align-items-center step-1 my-5">
+                        <div class="col-11 col-md-4 pe-5">
+                            <label for="name" class="d-block text-end pe-4"> نام<span class="text-danger">*</span></label>
+                            <input type="text" class="input-part-1" id="name">
+                            <label for="last-name" class="d-block text-end pe-4">نام خانوادگی<span class="text-danger">*</span></label>
+                            <input type="text" class="input-part-1" id="last-name">
+                        </div>
+                        <div class="col-11 col-md-4 pe-5">
+                            <label for="number" class="d-block text-end pe-4">شماره تلفن همراه</label>
+                            <input type="text" class="input-part-1" id="number" maxlength="10">
+                        </div>
+                        <div class="col-11 col-md-5">
+                            <p>
+                                در صورتی که ساکن ایران نیستید، <span class="text-red-color">شماره واتس‌اپ</span> خود را با کد کشور وارد کنید
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-11 col-md-4 pe-5">
-                        <label for="number" class="d-block text-end pe-4">شماره تلفن همراه</label>
-                        <input type="tel" class="input-part-1" id="number" pattern="[0-9]{10}" maxlength="10">
-                    </div>
-                    <div class="col-11 col-md-5">
-                        <p>
-                            در صورتی که ساکن ایران نیستید، <span class="text-red-color">شماره واتس‌اپ</span> خود را با کد کشور وارد کنید
-                        </p>
-                    </div>
-                </div>
+                </section>
+
                 <!-- step-one form end -->
+
                 <!-- step-two (major , job) form started  -->
-                <div class="align-items-center step-2" id="step-2">
-                    <div class="col-11-col-md-4 text-center">
-                        <label for="major" class="d-block">رشته تحصیلی خود را وارد کنید:<span class="text-danger">*</span></label>
-                        <input type="text" id="major" class="input-part-1" placeholder="رشته تحصیلی خود را وارد کنید">
-                        <label for="job" class="d-block">شغل شما:<span class="text-danger">*</span></label>
-                        <input type="text" id="job" class="input-part-1" placeholder="عنوان شغلی خود را وارد کنید">
+                <section id="section2">
+                    <div class="row justify-content-center align-items-center step-2" id="step-2">
+                        <div class="col-11-col-md-4 text-center">
+                            <label for="major" class="d-block">رشته تحصیلی خود را وارد کنید:<span class="text-danger">*</span></label>
+                            <input type="text" id="major" class="input-part-1" placeholder="رشته تحصیلی خود را وارد کنید">
+                            <label for="job" class="d-block">شغل شما:<span class="text-danger">*</span></label>
+                            <input type="text" id="job" class="input-part-1" placeholder="عنوان شغلی خود را وارد کنید">
+                        </div>
                     </div>
-                </div>
+                </section>
+                
                 <!-- step-two (major, job) form ended  -->
 
                 <!-- step-three (gender) form starts  -->
-                <div class="justify-content-center step-3">
-                    <div class="col-10 col-md-5 text-center d-flex flex-column align-items-center gender-section">
-                        <p>جنسیت شما چیست؟*</p>
-                        <input type="radio" class="btn-check" name="options-outlined" id="mr-outlined" autocomplete="off">
-                        <label class="btn btn-outline-danger select-gender-inpouts" for="mr-outlined">خانم</label>
-
-                        <input type="radio" class="btn-check" name="options-outlined" id="mrs-outlined" autocomplete="off">
-                        <label class="btn btn-outline-danger select-gender-inpouts" for="mrs-outlined">آقا</label>
-                        <input type="radio" class="btn-check" name="options-outlined" id="red-outlined" autocomplete="off">
-                        <label class="btn btn-outline-danger select-gender-inpouts" for="red-outlined">سایر</label>
+                <section id="section3">
+                    <div class="row justify-content-center step-3">
+                        <div class="col-10 col-md-5 text-center d-flex flex-column align-items-center gender-section">
+                            <p>جنسیت شما چیست؟*</p>
+                            <input type="radio" class="btn-check" name="options-outlined" id="mr-outlined" autocomplete="off">
+                            <label class="btn btn-outline-danger select-gender-inpouts" for="mr-outlined">خانم</label>
+    
+                            <input type="radio" class="btn-check" name="options-outlined" id="mrs-outlined" autocomplete="off">
+                            <label class="btn btn-outline-danger select-gender-inpouts" for="mrs-outlined">آقا</label>
+                            <input type="radio" class="btn-check" name="options-outlined" id="red-outlined" autocomplete="off">
+                            <label class="btn btn-outline-danger select-gender-inpouts" for="red-outlined">سایر</label>
+                        </div>
                     </div>
-                </div>
+                </section>
+                
                 <!-- step-three (gender) form end  -->
-                <!-- back & forward button starts  -->
+
+                <!-- step-four (city, state) form started  -->
+                <section id="section4">
+                    <div class="row justify-content-center align-items-center step-4">
+                        <div class="col-10 col-md-3">
+                            <label for="state" class="d-block">استان محل سکونت<span class="text-danger">*</span></label>
+                            <select name="state" id="state" onChange="iranwebsv(this.value);" class="input-part-1">
+                                <option value="0">لطفا استان را انتخاب نمایید</option>
+                                <option value="1">تهران</option>
+                                <option value="2">گیلان</option>
+                                <option value="3">آذربایجان شرقی</option>
+                                <option value="4">خوزستان</option>
+                                <option value="5">فارس</option>
+                                <option value="6">اصفهان</option>
+                                <option value="7">خراسان رضوی</option>
+                                <option value="8">قزوین</option>
+                                <option value="9">سمنان</option>
+                                <option value="10">قم</option>
+                                <option value="11">مرکزی</option>
+                                <option value="12">زنجان</option>
+                                <option value="13">مازندران</option>
+                                <option value="14">گلستان</option>
+                                <option value="15">اردبیل</option>
+                                <option value="16">آذربایجان غربی</option>
+                                <option value="17">همدان</option>
+                                <option value="18">کردستان</option>
+                                <option value="19">کرمانشاه</option>
+                                <option value="20">لرستان</option>
+                                <option value="21">بوشهر</option>
+                                <option value="22">کرمان</option>
+                                <option value="23">هرمزگان</option>
+                                <option value="24">چهارمحال و بختیاری</option>
+                                <option value="25">یزد</option>
+                                <option value="26">سیستان و بلوچستان</option>
+                                <option value="27">ایلام</option>
+                                <option value="28">کهگلویه و بویراحمد</option>
+                                <option value="29">خراسان شمالی</option>
+                                <option value="30">خراسان جنوبی</option>
+                                <option value="31">البرز</option>
+                            </select>
+                            <label for="city" class="d-block">شهر محل سکونت<span class="text-danger">*</span></label>
+                            <select name="city" id="city" class="input-part-1">
+                                <option value="0">لطفا استان را انتخاب نمایید</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <!-- step-four (city, state) form ended -->
+
+                <!-- step-five (age) form started  -->
+                <section id="section5">
+                    <div class="row justify-content-center align-items-center step-5">
+                        <div class="col-10 col-md-3">
+                            <label for="age" class="d-block">سن شما <span class="text-danger">*</span></label>
+                            <input type="text" id="age" class="input-part-1" placeholder="برای مثال: ۲۳">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- step-five (age) form ended  -->
+
+                <!-- step-six (address) form started  -->
+                <section id="section6">
+                    <div class="row justify-content-center align-items-stretch step-6">
+                        <div class="col-10 col-md-4">
+                            <label for="address" class="d-block"> آدرس:</label>
+                            <input type="text" class="w-100" id="address" placeholder="آدرس خود را وارد نمایید">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- step-six (address) form ended  -->
+                <!-- step-seven (Food) form started  -->
+                <section id="section7">
+                    <div class="row justify-content-center align-items-center">
+                        <!-- <div class="col-10 col-md-4 text-center">
+                            <p>لطفا غدای مورد علاقه خود را انتخاب کنید:(حداقل سه مورد)</p>
+                            <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                            <label class="btn" for="btn-check">پیتزا</label>
+                            <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
+                            <label class="btn" for="btn-check1">ساندویچ</label>
+                            <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                            <label class="btn" for="btn-check2">قرمه سبزی</label>
+                            <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                            <label class="btn" for="btn-check3">قیمه</label>
+                            <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
+                            <label class="btn" for="btn-check4">ماهی</label>
+                            <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off">
+                            <label class="btn" for="btn-check5">سوشی</label>
+                            <input type="checkbox" class="btn-check" id="btn-check6" autocomplete="off">
+                            <label class="btn" for="btn-check6">املت</label>
+                            <input type="checkbox" class="btn-check" id="btn-check7" autocomplete="off">
+                            <label class="btn" for="btn-check7">برنج</label>
+                            <input type="checkbox" class="btn-check" id="btn-check8" autocomplete="off">
+                            <label class="btn" for="btn-check8">کوبیده</label>
+                            <input type="checkbox" class="btn-check" id="btn-check9" autocomplete="off">
+                            <label class="btn" for="btn-check9">مرغ</label>
+                        </div> -->
+                        <div class="btn-group-vertical w-25 text-center" role="group" aria-label="Basic checkbox toggle button group">
+                            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck1">پیتزا</label>
+                          
+                            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck2">ساندویچ</label>
+
+                            <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck4">قیمه</label>
+                            
+                            <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck5">ماهی</label>
+
+                            <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck6">سوشی</label>
+
+                            <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck7">املت</label>
+
+                            <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck8">برنج</label>
+
+                            <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck9">کوبیده</label>
+                            
+                            <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck10">مرغ</label>
+                          
+                            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="btncheck3">قرمه سبزی</label>
+                          </div>
+                    </div>
+                </section>
+                <!-- step-seven (Foof) form ended  -->
+
+                <!-- prev & forward button starts  -->
                 <div class="justify-content-between my-3 buttons-section">
                     <div class="col-5 col-md-3">
-                        <button class="next-button" id="next-button">بعدی</button>
+                        <button type="button" class="next-button" id="next-button">بعدی</button>
+                        <button type="submit" class="next-button" id="sub-button" hidden>ثبت اطلاعات</button>
+
                     </div>
                     <div class="col-5 col-md-3">
-                        <button class="back-button" id="back-button" disabled>بازگشت</button>
+                        <button class="prev-button" id="prev-button">بازگشت</button>
                     </div>
                 </div>
-                <!-- back & forward buttton end  -->
+                <!-- prev & forward buttton end  -->
                 
 
             </form>
            <!---------- form ended  ---------->
         </div>
-    </section>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="/js/JS.js"></script>
     
